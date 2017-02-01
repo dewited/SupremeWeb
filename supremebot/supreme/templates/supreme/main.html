@@ -1,0 +1,9 @@
+{% if supreme_selection %}
+    <ul> 
+        {% for name in supreme_selection %}
+        <li> <a href="{% url 'supreme:details' name.id %}">{{ name.name }} </a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p> No objects </p>
+{% endif %}
