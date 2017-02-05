@@ -22,5 +22,5 @@ urlpatterns = [
     url(r'^$', views.main, name = 'main'),
     url(r'^releases/$', views.releases, name = 'releases'),
     url(r'^details/(?P<object_id>[0-9]+)/$', views.details, name = 'details'),
-    url(r'^users/$', views.users, name = 'users'),
+    url(r'^users/$', views.user_info, name = 'user_info'),
     ]
